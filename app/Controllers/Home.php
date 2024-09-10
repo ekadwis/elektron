@@ -77,6 +77,7 @@ class Home extends BaseController
     public function editbarang()
     {
         $data = [
+            'id_barang' => $this->request->getVar('id_barang'),
             'nama_barang' => $this->request->getVar('nama_barang'),
             'deskripsi' => $this->request->getVar('deskripsi'),
             'kategori' => $this->request->getVar('kategori'),

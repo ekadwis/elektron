@@ -31,6 +31,7 @@
         <input type="text" class="form-control" id="merek" aria-describedby="emailHelp" name="merek" value="<?= $result['merek']?>" required>
     </div>
     <input type="hidden" class="form-control" id="image" aria-describedby="emailHelp" name="image" value="<?= $result['image']?>" required>
+    <input type="hidden" class="form-control" id="id_barang" aria-describedby="emailHelp" name="id_barang" value="<?= $result['id_barang']?>" required>
     <div class="modal-footer">
         <button type="submit" class="btn btn-primary">Edit</button>
     </div>

@@ -36,7 +36,7 @@
                     <li class="sidebar-item">
                         <a href="<?= base_url(); ?>barang" class="sidebar-link">
                             <i class="fa-solid fa-box"></i>
-                            Barang
+                            Produk
                         </a>
                     </li>
                 </ul>
