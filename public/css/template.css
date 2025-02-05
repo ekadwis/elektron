@@ -40,6 +40,7 @@ li {
     transition: all 0.35s ease-in-out;
     box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
     z-index: 1111;
+    background-color: #525FE1;
 }
 
 /* Sidebar collapse */
@@ -62,7 +63,7 @@ li {
 }
 
 .sidebar-logo a {
-    color: #000;
+    color: #fff;
     font-size: 1.25rem;
     font-weight: 600;
 }
@@ -72,14 +73,14 @@ li {
 }
 
 .sidebar-header {
-    color: #000;
+    color: #fff;
     font-size: .75rem;
     padding: 1.5rem 1.5rem .375rem;
 }
 
 a.sidebar-link {
     padding: .625rem 1.625rem;
-    color: #000;
+    color: #fff;
     position: relative;
     display: block;
     font-size: 1rem;

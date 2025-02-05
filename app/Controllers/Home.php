@@ -19,7 +19,12 @@ class Home extends BaseController
         $data = [
             'barang' => $this->BarangModel->findAll()
         ];
-        return view('homepage', $data);
+        return view('produk', $data);
+    }
+
+    public function dashboard()
+    {
+        return view('dashboard');
     }
 
     public function tambahbarang()
@@ -59,7 +64,7 @@ class Home extends BaseController
         ];
 
         $this->BarangModel->insert($data);
-        return redirect()->to('/')->with('msg-barang', 'Barang Berhasil ditambahkan');
+        return redirect()->to('/produk')->with('msg-barang', 'Barang Berhasil ditambahkan');
     }
 
     public function edit($id_barang)
@@ -90,12 +95,12 @@ class Home extends BaseController
 
         $this->BarangModel->save($data); // update data
 
-        return redirect()->to('/')->with('msg-barang', 'Berhasil melakukan edit barang');
+        return redirect()->to('/produk')->with('msg-barang', 'Berhasil melakukan edit barang');
     }
 
     public function delete($id_barang)
     {
         $this->BarangModel->delete($id_barang);
-        return redirect()->to('/')->with('msg-barang', 'Berhasil Menghapus Barang');
+        return redirect()->to('/produk')->with('msg-barang', 'Berhasil Menghapus Barang');
     }
 }

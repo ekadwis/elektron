@@ -16,6 +16,9 @@
     <!-- BoxIcons -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
+    <!-- Apexchart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
     <link rel="stylesheet" href="/css/template.css">
     <title>Elektron</title>
 </head>
@@ -26,7 +29,7 @@
         <aside id="sidebar">
             <div class="h-100">
                 <div class="sidebar-logo">
-                    <img src="/img/logo.png" alt="">
+                    <h2 class="text-white">ElectronRX</h2>
                 </div>
                 <!-- Sidebar Navigation -->
                 <ul class="sidebar-nav">
@@ -34,7 +37,13 @@
                         Tools & Components
                     </li>
                     <li class="sidebar-item">
-                        <a href="<?= base_url(); ?>barang" class="sidebar-link">
+                        <a href="<?= base_url(); ?>" class="sidebar-link">
+                            <i class="fa-solid fa-box"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="<?= base_url(); ?>produk" class="sidebar-link">
                             <i class="fa-solid fa-box"></i>
                             Produk
                         </a>
@@ -50,7 +59,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>`
             </nav>
-            <main class="content px-3 py-2">
+            <main class="content px-3 py-2" style="background-color: #F5F7F8;">
                 <div class="container-fluid">
                     <div class="mb-3">
                         <?php if (session()->getFlashdata('msg')) : ?>
